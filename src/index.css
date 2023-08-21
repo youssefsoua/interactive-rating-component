@@ -4,15 +4,19 @@
 @tailwind utilities;
 
 @layer base {
-  .mainWrapper {
+  body {
     background-color: hsl(216, 12%, 8%);
     font-size: 15px;
     font-family: "Overpass", sans-serif;
-    min-height: 100vh;
+    height: 100vh;
     width: 100vw;
+  }
+  .main-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
   }
 }

@@ -15,17 +15,17 @@ const App = () => {
   }, [rating]);
 
   return (
-    <div
-      className={`flex h-[400px] w-[340px] flex-col rounded-3xl bg-dark-blue/80 p-5 ${
+    <article
+      className={`flex h-[360px] w-[325px] flex-col rounded-[2rem] bg-dark-blue/80 p-6 ${
         isSubmitted ? "items-center text-center" : ""
-      } sm:h-[415px] sm:w-[420px] sm:px-10 sm:py-8`}
+      } sm:h-[413px] sm:w-[413px] sm:px-10 sm:py-8`}
     >
       {isSubmitted ? (
         <RatingSubmitted rating={rating} />
       ) : (
         <RatingForm submit={submit} setRating={setRating} rating={rating} />
       )}
-    </div>
+    </article>
   );
 };
 
