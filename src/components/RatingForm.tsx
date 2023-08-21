@@ -17,7 +17,7 @@ const RatingForm = (props: IRatingFormProps) => {
   return (
     <>
       <header>
-        <div className="smw-12 flex h-10 w-10 items-center justify-center rounded-full bg-medium-grey/10 sm:h-12">
+        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-medium-grey/10 sm:h-12 sm:w-12">
           <img src="./icon-star.svg" alt="Star" />
         </div>
         <h1 className="py-5 text-xl font-bold text-white sm:pb-4 sm:pt-7 sm:text-2xl sm:text-[1.75rem]">
